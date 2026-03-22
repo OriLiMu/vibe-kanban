@@ -27,6 +27,7 @@
 - [x] `feat/notes-root-config`：扩展 Config 版本迁移与共享类型
 - [x] `feat/notes-root-config`：在设置页增加笔记根目录选择入口与文案
 - [x] `feat/notes-root-config`：验证配置保存、类型生成与格式化
+- [x] 记录 `2026-03-22 16:41 +0800` 项目上下文快照到 `@Ctx_Snapshots/`，供新会话继续 `markdown-frontmatter-spec`
 - [ ] 明确 Markdown 文件命名规则与 frontmatter 规范
 - [ ] 设计 `projects` 单仓库化改造方案
 - [ ] 设计 `branches` 表字段与约束
