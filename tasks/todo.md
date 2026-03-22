@@ -1,0 +1,119 @@
+# 当前任务
+
+- [x] 确认当前仓库状态、当前分支与已有 worktree
+- [x] 创建分支 `codex/codebase-overview`
+- [x] 创建 worktree `/home/lizhe/CodeOri/vibe-kanban-overview`
+- [x] 梳理代码库结构与关键模块
+- [x] 验证 worktree 与分支状态
+- [x] 输出代码库总览与后续建议
+
+## 本轮需求规划
+
+- [x] 收敛 Vibe-Kanban 新信息架构与核心对象层级
+- [x] 明确 `project -> branch -> session -> note` 主线与全局知识工作台
+- [x] 评估现有 `workspace/session/scratch` 模型与目标模型的差异
+- [x] 整理数据模型、UI/交互分层、画板关系模型与阻塞流转
+- [x] 输出可行性、代码量评估与分阶段实现路线
+
+## 工程化固化与最小任务拆分
+
+- [x] 固化第一版产品模型与底层 `workspace` 隐藏映射策略
+- [x] 固化第一版表结构草案、API 草案、前端路由草案
+- [x] 评估 `opencli` 作为浏览器自动化测试模块的接入方式
+- [x] 识别可并行执行的任务批次与分支拆分建议
+- [x] 记录执行计划与相关文件清单到 `tasks/execution-plan.md`
+- [ ] 新增笔记根目录配置项与默认路径策略
+- [ ] 明确 Markdown 文件命名规则与 frontmatter 规范
+- [ ] 设计 `projects` 单仓库化改造方案
+- [ ] 设计 `branches` 表字段与约束
+- [ ] 设计 `sessions` 扩展字段与迁移方案
+- [ ] 设计 `session_notes` 表字段与索引
+- [ ] 设计 `global_notes` 表字段与索引
+- [ ] 设计 `global_note_sources` 多来源映射表
+- [ ] 设计 `tags` 与 note/global_note 关联表
+- [ ] 设计 `entity_relations` 通用关系表
+- [ ] 设计全文搜索索引与查询范围
+- [ ] 编写 phase 1 migration SQL 草案
+- [ ] 为新增 Rust 模型定义 TS 导出策略
+- [ ] 新增 `Branch` Rust model
+- [ ] 新增 `SessionNote` Rust model
+- [ ] 新增 `GlobalNote` Rust model
+- [ ] 新增 `EntityRelation` Rust model
+- [ ] 新增 Markdown 文件元数据读写服务
+- [ ] 新增外部编辑器打开任意文档文件的服务接口
+- [ ] 新增 `GET /api/projects` 本地项目主仓库查询能力调整
+- [ ] 新增 `GET /api/projects/:id/branches`
+- [ ] 新增 `POST /api/projects/:id/branches`
+- [ ] 新增 `GET /api/branches/:id`
+- [ ] 新增 `PATCH /api/branches/:id`
+- [ ] 新增 `POST /api/branches/:id/block`
+- [ ] 新增 `POST /api/branches/:id/unblock`
+- [ ] 新增 `POST /api/branches/:id/derive`
+- [ ] 新增 `GET /api/branches/:id/sessions`
+- [ ] 新增 `POST /api/branches/:id/sessions`
+- [ ] 新增 `GET /api/sessions/:id/detail`
+- [ ] 新增 `PATCH /api/sessions/:id`
+- [ ] 新增 `GET /api/sessions/:id/notes`
+- [ ] 新增 `POST /api/sessions/:id/notes`
+- [ ] 新增 `GET /api/notes/:id`
+- [ ] 新增 `PATCH /api/notes/:id`
+- [ ] 新增 `GET /api/global-notes`
+- [ ] 新增 `POST /api/global-notes`
+- [ ] 新增 `GET /api/global-notes/:id`
+- [ ] 新增 `PATCH /api/global-notes/:id`
+- [ ] 新增 `POST /api/global-notes/:id/sources`
+- [ ] 新增 `GET /api/relations`
+- [ ] 新增 `POST /api/relations`
+- [ ] 新增 `DELETE /api/relations/:id`
+- [ ] 新增 `GET /api/search/knowledge`
+- [ ] 生成共享 TS 类型并接入前端
+- [ ] 扩展前端 `AppDestination` 支持 knowledge/canvas/branch/session 路由
+- [ ] 新增本地导航 `goToBranch`
+- [ ] 新增本地导航 `goToSession`
+- [ ] 新增本地导航 `goToKnowledgeWorkbench`
+- [ ] 新增本地导航 `goToCanvas`
+- [ ] 新增 `projects/:projectId/branches` 列表页路由
+- [ ] 新增 `projects/:projectId/branches/:branchId` 详情页路由
+- [ ] 新增 `projects/:projectId/sessions/:sessionId` 详情页路由
+- [ ] 新增 `projects/:projectId/knowledge` 工作台路由
+- [ ] 新增 `projects/:projectId/canvas` 画板路由
+- [ ] 实现 project -> branch 列表页骨架
+- [ ] 实现 branch 创建表单
+- [ ] 实现 branch 详情页头部与结构化字段展示
+- [ ] 实现 branch 正文 Markdown 预览
+- [ ] 实现 branch “打开外部编辑器”
+- [ ] 实现 branch 状态切换 UI
+- [ ] 实现 branch 阻塞说明与阻塞来源展示
+- [ ] 实现从 branch 创建解阻 branch 的入口
+- [ ] 实现 branch 下 session 列表
+- [ ] 实现 session 创建表单
+- [ ] 实现 session 页面左右主布局
+- [ ] 复用现有聊天记录区域到新 session 页面
+- [ ] 实现聊天记录全屏只读查看
+- [ ] 实现 session 正文 Markdown 预览
+- [ ] 实现 session “打开外部编辑器”
+- [ ] 实现 session note 左侧双栏布局
+- [ ] 实现 note 列表查询参数状态管理
+- [ ] 实现 note 列表搜索
+- [ ] 实现 note 列表标签筛选
+- [ ] 实现固定可见的新建 note 按钮
+- [ ] 实现 note 详情只读预览
+- [ ] 实现 note “打开外部编辑器”
+- [ ] 实现从一个或多个 session note 提炼 global note
+- [ ] 实现 knowledge workbench 三栏布局
+- [ ] 实现 global note 列表搜索与标签筛选
+- [ ] 实现 global note 来源区块
+- [ ] 实现 global note 关系区块
+- [ ] 实现 global note “打开外部编辑器”
+- [ ] 选型并接入画板基础库
+- [ ] 实现 branch/session/note/global_note 节点模型映射
+- [ ] 实现固定关系类型创建面板
+- [ ] 实现画板侧边栏全局 note 管理区
+- [ ] 实现画板关系筛选
+- [ ] 实现关系在详情页与画板之间双向同步
+- [ ] 为 phase 1 编写最小集成验证清单
+- [ ] 验证 migration 可执行
+- [ ] 验证共享类型生成
+- [ ] 验证 branch 创建到隐藏 workspace 映射
+- [ ] 验证 session 创建与旧聊天运行时兼容
+- [ ] 验证 Markdown 文件生成、预览与外部编辑器打开
