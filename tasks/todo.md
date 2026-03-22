@@ -28,7 +28,13 @@
 - [x] `feat/notes-root-config`：在设置页增加笔记根目录选择入口与文案
 - [x] `feat/notes-root-config`：验证配置保存、类型生成与格式化
 - [x] 记录 `2026-03-22 16:41 +0800` 项目上下文快照到 `@Ctx_Snapshots/`，供新会话继续 `markdown-frontmatter-spec`
-- [ ] 明确 Markdown 文件命名规则与 frontmatter 规范
+- [x] 明确 Markdown 文件命名规则与 frontmatter 规范
+- [x] `markdown-frontmatter-spec`：读取上下文快照、计划约束与现有 frontmatter 解析线索
+- [x] `markdown-frontmatter-spec`：明确 project 目录与 branch/session/note/global note 文件命名规则
+- [x] `markdown-frontmatter-spec`：明确 frontmatter 公共字段、实体专属字段与字段职责边界
+- [x] `markdown-frontmatter-spec`：输出规格文档到 `tasks/markdown-frontmatter-spec.md`
+- [x] `markdown-frontmatter-spec`：同步 `tasks/execution-plan.md` 相关引用
+- [x] `markdown-frontmatter-spec`：完成差异检查与格式化验证
 - [ ] 设计 `projects` 单仓库化改造方案
 - [ ] 设计 `branches` 表字段与约束
 - [ ] 设计 `sessions` 扩展字段与迁移方案

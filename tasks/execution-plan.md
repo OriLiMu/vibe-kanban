@@ -54,6 +54,7 @@
 - 每个 project 一个文件夹
 - project 文件夹下采用平铺结构
 - 层级与关系通过数据库和 frontmatter 管理
+- Markdown 文件命名与 frontmatter v1 规范见 `tasks/markdown-frontmatter-spec.md`
 
 ### 2.3 编辑与预览
 
@@ -281,6 +282,7 @@
 - [tasks/todo.md](/home/lizhe/CodeOri/vibe-kanban-overview/tasks/todo.md)
 - [tasks/lessons.md](/home/lizhe/CodeOri/vibe-kanban-overview/tasks/lessons.md)
 - [tasks/execution-plan.md](/home/lizhe/CodeOri/vibe-kanban-overview/tasks/execution-plan.md)
+- `tasks/markdown-frontmatter-spec.md`
 
 ### 当前最关键的现有后端文件
 
@@ -343,4 +345,3 @@
 - `packages/web-core/src/pages/sessions/SessionDetailPage.tsx`
 - `packages/web-core/src/pages/knowledge/KnowledgeWorkbenchPage.tsx`
 - `packages/web-core/src/pages/canvas/KnowledgeCanvasPage.tsx`
-
