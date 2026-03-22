@@ -165,6 +165,14 @@
           "browse": "浏览",
           "dialogTitle": "选择工作区目录",
           "dialogDescription": "选择一个目录。工作区将在其中的 .vibe-kanban-workspaces 子目录中创建。"
+        },
+        "notesRootDir": {
+          "label": "笔记根目录",
+          "placeholder": "留空以使用应用默认目录",
+          "helper": "知识 Markdown 文件会存储在此目录下。留空以使用应用默认目录。",
+          "browse": "浏览",
+          "dialogTitle": "选择笔记根目录",
+          "dialogDescription": "选择用于存储知识 Markdown 文件的根目录。"
         }
       },
       "pullRequests": {

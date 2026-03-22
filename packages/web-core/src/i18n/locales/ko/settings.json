@@ -165,6 +165,14 @@
           "browse": "찾아보기",
           "dialogTitle": "워크스페이스 디렉토리 선택",
           "dialogDescription": "디렉토리를 선택하세요. 워크스페이스는 해당 디렉토리 내의 .vibe-kanban-workspaces 하위 디렉토리에 생성됩니다."
+        },
+        "notesRootDir": {
+          "label": "노트 루트 디렉토리",
+          "placeholder": "비워두면 앱 기본 디렉토리를 사용합니다",
+          "helper": "지식 Markdown 파일은 이 디렉토리 아래에 저장됩니다. 비워두면 앱 기본 디렉토리를 사용합니다.",
+          "browse": "찾아보기",
+          "dialogTitle": "노트 루트 디렉토리 선택",
+          "dialogDescription": "지식 Markdown 파일을 저장할 루트 디렉토리를 선택하세요."
         }
       },
       "pullRequests": {

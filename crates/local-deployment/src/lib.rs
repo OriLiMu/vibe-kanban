@@ -118,6 +118,15 @@ impl Deployment for LocalDeployment {
             WorktreeManager::set_workspace_dir_override(path);
         }
 
+        let notes_root_dir = raw_config.resolved_notes_root_dir();
+        if let Err(error) = std::fs::create_dir_all(&notes_root_dir) {
+            tracing::warn!(
+                path = %notes_root_dir.display(),
+                %error,
+                "Failed to prepare notes root directory"
+            );
+        }
+
         let config = Arc::new(RwLock::new(raw_config));
         let user_id = generate_user_id();
         let analytics = AnalyticsConfig::new().map(AnalyticsService::new);

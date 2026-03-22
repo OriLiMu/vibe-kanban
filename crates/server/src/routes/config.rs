@@ -149,6 +149,15 @@ async fn update_config(
         ));
     }
 
+    let notes_root_dir = new_config.resolved_notes_root_dir();
+    if let Err(error) = std::fs::create_dir_all(&notes_root_dir) {
+        return ResponseJson(ApiResponse::error(&format!(
+            "Failed to prepare notes root directory {}: {}",
+            notes_root_dir.display(),
+            error
+        )));
+    }
+
     // Get old config state before updating
     let old_config = deployment.config().read().await.clone();
 

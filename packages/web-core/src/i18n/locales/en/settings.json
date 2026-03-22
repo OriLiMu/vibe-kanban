@@ -173,6 +173,14 @@
           "browse": "Browse",
           "dialogTitle": "Select Workspace Directory",
           "dialogDescription": "Choose a directory. Workspaces will be created in a .vibe-kanban-workspaces subdirectory within it."
+        },
+        "notesRootDir": {
+          "label": "Notes Root Directory",
+          "placeholder": "Leave empty to use the default app data directory",
+          "helper": "Knowledge Markdown files will be stored under this directory. Leave empty to use the default app data directory.",
+          "browse": "Browse",
+          "dialogTitle": "Select Notes Root Directory",
+          "dialogDescription": "Choose the root directory where knowledge Markdown files should be stored."
         }
       },
       "pullRequests": {

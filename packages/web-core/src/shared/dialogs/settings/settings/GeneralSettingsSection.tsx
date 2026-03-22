@@ -126,6 +126,17 @@ export function GeneralSettingsSection() {
     }
   };
 
+  const handleBrowseNotesRootDir = async () => {
+    const result = await FolderPickerDialog.show({
+      value: draft?.notes_root_dir ?? '',
+      title: t('settings.general.git.notesRootDir.dialogTitle'),
+      description: t('settings.general.git.notesRootDir.dialogDescription'),
+    });
+    if (result) {
+      updateDraft({ notes_root_dir: result });
+    }
+  };
+
   useEffect(() => {
     if (!config) return;
     if (!dirty) {
@@ -588,6 +599,30 @@ export function GeneralSettingsSection() {
             >
               <FolderSimpleIcon className="size-icon-sm" weight="bold" />
               {t('settings.general.git.workspaceDir.browse')}
+            </PrimaryButton>
+          </div>
+        </SettingsField>
+
+        <SettingsField
+          label={t('settings.general.git.notesRootDir.label')}
+          description={t('settings.general.git.notesRootDir.helper')}
+        >
+          <div className="flex gap-2">
+            <div className="flex-1">
+              <SettingsInput
+                value={draft?.notes_root_dir ?? ''}
+                onChange={(value) =>
+                  updateDraft({ notes_root_dir: value || null })
+                }
+                placeholder={t('settings.general.git.notesRootDir.placeholder')}
+              />
+            </div>
+            <PrimaryButton
+              variant="tertiary"
+              onClick={handleBrowseNotesRootDir}
+            >
+              <FolderSimpleIcon className="size-icon-sm" weight="bold" />
+              {t('settings.general.git.notesRootDir.browse')}
             </PrimaryButton>
           </div>
         </SettingsField>

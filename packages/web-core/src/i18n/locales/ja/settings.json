@@ -165,6 +165,14 @@
           "browse": "参照",
           "dialogTitle": "ワークスペースディレクトリを選択",
           "dialogDescription": "ディレクトリを選択してください。ワークスペースはその中の .vibe-kanban-workspaces サブディレクトリに作成されます。"
+        },
+        "notesRootDir": {
+          "label": "ノートルートディレクトリ",
+          "placeholder": "空欄でアプリ既定ディレクトリを使用",
+          "helper": "知識 Markdown ファイルはこのディレクトリ配下に保存されます。空欄の場合はアプリ既定のディレクトリを使用します。",
+          "browse": "参照",
+          "dialogTitle": "ノートルートディレクトリを選択",
+          "dialogDescription": "知識 Markdown ファイルを保存するルートディレクトリを選択してください。"
         }
       },
       "pullRequests": {

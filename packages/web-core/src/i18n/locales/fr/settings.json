@@ -165,6 +165,14 @@
           "browse": "Parcourir",
           "dialogTitle": "Sélectionner le répertoire des espaces de travail",
           "dialogDescription": "Choisissez un répertoire. Les espaces de travail seront créés dans un sous-répertoire .vibe-kanban-workspaces à l'intérieur."
+        },
+        "notesRootDir": {
+          "label": "Répertoire racine des notes",
+          "placeholder": "Laisser vide pour utiliser le répertoire par défaut de l'application",
+          "helper": "Les fichiers Markdown de connaissance seront stockés dans ce répertoire. Laissez vide pour utiliser le répertoire par défaut de l'application.",
+          "browse": "Parcourir",
+          "dialogTitle": "Sélectionner le répertoire racine des notes",
+          "dialogDescription": "Choisissez le répertoire racine où stocker les fichiers Markdown de connaissance."
         }
       },
       "pullRequests": {
